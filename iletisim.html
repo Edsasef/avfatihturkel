@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim ve Randevu | Av. Alparslan Fatih Türkel</title>
+    <meta name="description" content="Hukuki danışmanlık ve randevu talepleriniz için bizimle iletişime geçin.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR (Sabit ve Şeffaflaşan Yapı) -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">
+                   Av. Alparslan Fatih Türkel
+                </a>
+
+                <button class="hamburger" aria-label="Menüyü Aç">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                    <li><a href="hakkimda.html" class="nav-link">Hakkımda</a></li>
+                    <li><a href="calisma-alanlari.html" class="nav-link">Çalışma Alanları</a></li>
+                    <li><a href="makaleler.html" class="nav-link">Makaleler</a></li>
+                    <!-- 'active' sınıfı artık İletişim linkinde -->
+                    <li><a href="iletisim.html" class="nav-link active">İletişim</a></li>
+                    <li class="mobile-cta"><a href="tel:+905555555555" class="cta-btn">Hemen Arayın</a></li>
+                </ul>
+
+                <div class="navbar-cta">
+                    <a href="tel:+905555555555" class="cta-btn">Hemen Arayın</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- İÇ SAYFA KARŞILAMA -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>İletişim & Randevu</h1>
+                <p>Hukuki süreçlerinizi başlatmak veya danışmanlık almak için aşağıdaki formu doldurabilir veya bizi doğrudan arayabilirsiniz.</p>
+            </div>
+        </section>
+
+        <!-- İLETİŞİM BÖLÜMÜ -->
+        <section class="contact-section">
+            <div class="contact-container">
+                
+                <!-- Sol Taraf: İletişim Bilgileri ve Harita -->
+                <div class="contact-info-wrapper">
+                    <h2>Bize Ulaşın</h2>
+                    <div class="title-line"></div>
+                    <p class="contact-desc">Acil hukuki destek talepleriniz için mesai saatleri içerisinde ofisimizi arayabilirsiniz.</p>
+                    
+                    <!-- Güncellenen Adres Bilgisi -->
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <strong>Adres</strong>
+                            <p>Kayacık Mah. Amiral Cad. No:241 - 1 - 1<br>Karamürsel / Kocaeli</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <strong>Telefon</strong>
+                            <p><a href="tel:+905555555555">+90 555 555 55 55</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-text">
+                            <strong>E-Posta</strong>
+                            <p><a href="mailto:info@avukatisim.com">info@avukatisim.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-text">
+                            <strong>Çalışma Saatleri</strong>
+                            <p>Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Harita -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Kayac%C4%B1k%20Mah.%20Amiral%20Cad.%20No:241%20Karam%C3%BCrsel%20Kocaeli&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Sağ Taraf: Randevu/İletişim Formu -->
+                <div class="contact-form-wrapper">
+                    <h3>Mesaj Gönderin</h3>
+                    <p>Konuyu kısaca özetleyin, en kısa sürede size dönüş yapalım.</p>
+                    
+                    <form action="#" method="POST" class="law-form">
+                        <div class="form-group">
+                            <label for="fullname">Adınız Soyadınız</label>
+                            <input type="text" id="fullname" name="fullname" required placeholder="Örn: Ahmet Yılmaz">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefon Numaranız</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Posta Adresiniz (Opsiyonel)</label>
+                                <input type="email" id="email" name="email" placeholder="ornek@mail.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Hukuki Alan (Konu)</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Lütfen bir konu seçin</option>
+                                <option value="ceza">Ceza Hukuku</option>
+                                <option value="aile">Aile ve Boşanma Hukuku</option>
+                                <option value="is">İş Hukuku ve Tazminat</option>
+                                <option value="sozlesme">Sözleşme Hazırlama</option>
+                                <option value="diger">Diğer / Danışmanlık</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız / Durum Özeti</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Hukuki sürecinizle ilgili kısaca bilgi verin..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary form-submit">Talebi Gönder</button>
+
+                        <div class="privacy-notice">
+                            🔒 Paylaştığınız tüm bilgiler <strong>Avukatlık Kanunu sır saklama yükümlülüğü</strong> kapsamında mutlak gizlilikle korunmaktadır.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Av. İsim Soyisim. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- JS DOSYASI -->
+    <script src="script.js"></script>
+</body>
+</html>
